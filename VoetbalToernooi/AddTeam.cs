@@ -58,5 +58,10 @@ namespace VoetbalToernooi
         {
             this.Close();
         }
+
+        private void AddTeam_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

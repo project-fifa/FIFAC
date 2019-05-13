@@ -28,8 +28,6 @@ namespace VoetbalToernooi
         /// </summary>
         private void InitializeComponent()
         {
-            this.playersListView = new System.Windows.Forms.ListView();
-            this.teamsListView = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DescPanel = new System.Windows.Forms.Panel();
@@ -49,31 +47,13 @@ namespace VoetbalToernooi
             this.PGoalsLabel = new System.Windows.Forms.Label();
             this.PNameLabel = new System.Windows.Forms.Label();
             this.label008 = new System.Windows.Forms.Label();
+            this.teamListBox = new System.Windows.Forms.ListBox();
+            this.playersListBox = new System.Windows.Forms.ListBox();
+            this.userListBox = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.DescPanel.SuspendLayout();
             this.StatsPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // playersListView
-            // 
-            this.playersListView.Location = new System.Drawing.Point(12, 267);
-            this.playersListView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.playersListView.Name = "playersListView";
-            this.playersListView.Size = new System.Drawing.Size(203, 253);
-            this.playersListView.TabIndex = 0;
-            this.playersListView.UseCompatibleStateImageBehavior = false;
-            this.playersListView.View = System.Windows.Forms.View.List;
-            this.playersListView.ItemActivate += new System.EventHandler(this.playersListView_ItemActivate);
-            // 
-            // teamsListView
-            // 
-            this.teamsListView.Location = new System.Drawing.Point(12, 26);
-            this.teamsListView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.teamsListView.Name = "teamsListView";
-            this.teamsListView.Size = new System.Drawing.Size(203, 218);
-            this.teamsListView.TabIndex = 1;
-            this.teamsListView.UseCompatibleStateImageBehavior = false;
-            this.teamsListView.View = System.Windows.Forms.View.List;
-            this.teamsListView.ItemActivate += new System.EventHandler(this.teamsListView_ItemActivate);
             // 
             // label1
             // 
@@ -273,22 +253,59 @@ namespace VoetbalToernooi
             this.label008.TabIndex = 7;
             this.label008.Text = "Speler Statestieken";
             // 
+            // teamListBox
+            // 
+            this.teamListBox.FormattingEnabled = true;
+            this.teamListBox.ItemHeight = 16;
+            this.teamListBox.Location = new System.Drawing.Point(13, 27);
+            this.teamListBox.Name = "teamListBox";
+            this.teamListBox.Size = new System.Drawing.Size(202, 212);
+            this.teamListBox.TabIndex = 8;
+            // 
+            // playersListBox
+            // 
+            this.playersListBox.FormattingEnabled = true;
+            this.playersListBox.ItemHeight = 16;
+            this.playersListBox.Location = new System.Drawing.Point(13, 267);
+            this.playersListBox.Name = "playersListBox";
+            this.playersListBox.Size = new System.Drawing.Size(202, 212);
+            this.playersListBox.TabIndex = 9;
+            // 
+            // userListBox
+            // 
+            this.userListBox.FormattingEnabled = true;
+            this.userListBox.ItemHeight = 16;
+            this.userListBox.Location = new System.Drawing.Point(399, 27);
+            this.userListBox.Name = "userListBox";
+            this.userListBox.Size = new System.Drawing.Size(160, 84);
+            this.userListBox.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(397, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 17);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Users";
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 532);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.userListBox);
+            this.Controls.Add(this.playersListBox);
+            this.Controls.Add(this.teamListBox);
             this.Controls.Add(this.label008);
             this.Controls.Add(this.StatsPanel);
             this.Controls.Add(this.DescPanel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.teamsListView);
-            this.Controls.Add(this.playersListView);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Homepage";
             this.Text = "Homepage";
-            this.Load += new System.EventHandler(this.Homepage_Load);
             this.DescPanel.ResumeLayout(false);
             this.DescPanel.PerformLayout();
             this.StatsPanel.ResumeLayout(false);
@@ -299,9 +316,6 @@ namespace VoetbalToernooi
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView playersListView;
-        private System.Windows.Forms.ListView teamsListView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel DescPanel;
@@ -321,6 +335,10 @@ namespace VoetbalToernooi
         private System.Windows.Forms.Label Label007;
         private System.Windows.Forms.Label PTeamPointsLabel;
         private System.Windows.Forms.Label label008;
+        private System.Windows.Forms.ListBox teamListBox;
+        private System.Windows.Forms.ListBox playersListBox;
+        private System.Windows.Forms.ListBox userListBox;
+        private System.Windows.Forms.Label label3;
     }
 }
 

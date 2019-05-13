@@ -19,3 +19,17 @@ C:\Users\Svenr\Desktop\FIFA\VoetbalToernooi\VoetbalToernooi\bin\Debug\VoetbalToe
 C:\Users\Svenr\Desktop\FIFA\VoetbalToernooi\VoetbalToernooi\bin\Debug\VoetbalToernooi.exe
 C:\Users\Svenr\Desktop\FIFA\VoetbalToernooi\VoetbalToernooi\bin\Debug\VoetbalToernooi.pdb
 C:\Users\Svenr\Desktop\FIFA\VoetbalToernooi\VoetbalToernooi\obj\Debug\VoetbalToernooi.AddTeam.resources
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\bin\Debug\VoetbalToernooi.exe.config
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\bin\Debug\VoetbalToernooi.exe
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\bin\Debug\VoetbalToernooi.pdb
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.csprojAssemblyReference.cache
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.AddTeam.resources
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.Homepage.resources
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.Properties.Resources.resources
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.csproj.GenerateResource.cache
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.csproj.CoreCompileInputs.cache
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.exe
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.pdb
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.csproj.CopyComplete

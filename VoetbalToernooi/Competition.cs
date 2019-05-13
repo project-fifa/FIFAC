@@ -13,7 +13,7 @@ namespace VoetbalToernooi
         public void AddTeam(string name)
         {
             Team newTeam = new Team();
-            newTeam.Name = name;
+            newTeam.teamName = name;
 
             Teams.Add(newTeam);
         }

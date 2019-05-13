@@ -193,6 +193,7 @@ namespace VoetbalToernooi
             this.Controls.Add(this.createButton);
             this.Name = "AddTeam";
             this.Text = "AddTeam";
+            this.Load += new System.EventHandler(this.AddTeam_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
