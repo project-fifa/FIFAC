@@ -28,7 +28,7 @@ namespace VoetbalToernooi
 
             try
             {
-                userJson = downloader.DownloadString("http://localhost/vht/FIFA-PHP/FIFA-PHP/usersAPI.php");
+                userJson = downloader.DownloadString("http://localhost/PHP/FIFA-PHP/usersAPI.php");
             }
             catch
             {
@@ -50,7 +50,7 @@ namespace VoetbalToernooi
 
             try
             {
-                playerJson = downloader.DownloadString("http://localhost/vht/FIFA-PHP/FIFA-PHP/playerAPI.php");
+                playerJson = downloader.DownloadString("http://localhost/PHP/FIFA-PHP/playerAPI.php");
             }
             catch
             {
@@ -73,7 +73,7 @@ namespace VoetbalToernooi
 
             try
             {
-                teamJson = downloader.DownloadString("http://localhost/vht/FIFA-PHP/FIFA-PHP/teamAPI.php");
+                teamJson = downloader.DownloadString("http://localhost/PHP/FIFA-PHP/teamAPI.php");
             }
             catch
             {
