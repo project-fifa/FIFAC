@@ -33,3 +33,17 @@ C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalT
 C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\bin\Debug\Newtonsoft.Json.dll
 C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\bin\Debug\Newtonsoft.Json.xml
 C:\Users\andy3\OneDrive\Documenten\School_Documenten\periode_4\PR\FIFAC\VoetbalToernooi\obj\Debug\VoetbalToernooi.csproj.CopyComplete
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.csprojAssemblyReference.cache
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.AddTeam.resources
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.Homepage.resources
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.Properties.Resources.resources
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.csproj.GenerateResource.cache
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.csproj.CoreCompileInputs.cache
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.exe
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.pdb
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\bin\Debug\VoetbalToernooi.exe.config
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\bin\Debug\VoetbalToernooi.exe
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\bin\Debug\VoetbalToernooi.pdb
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\bin\Debug\Newtonsoft.Json.dll
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\bin\Debug\Newtonsoft.Json.xml
+C:\school\leerjaar 1 2018-2019\periode 4\FIFA-C-\VoetbalToernooi\obj\Debug\VoetbalToernooi.csproj.CopyComplete

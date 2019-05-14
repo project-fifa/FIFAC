@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,12 +6,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using System.Windows.Forms;
+using System.IO;
 
 namespace VoetbalToernooi
 {
     public partial class Homepage : Form
     {
+        private object user;
+
         public Homepage()
         {
             InitializeComponent();
@@ -89,5 +92,14 @@ namespace VoetbalToernooi
             }
         }
 
+        private void teamListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+            File.WriteAllText(@".\InformationUser.dat", JsonConvert.SerializeObject(user));
+        }
     }
 }

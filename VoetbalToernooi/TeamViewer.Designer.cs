@@ -261,6 +261,7 @@ namespace VoetbalToernooi
             this.teamListBox.Name = "teamListBox";
             this.teamListBox.Size = new System.Drawing.Size(202, 212);
             this.teamListBox.TabIndex = 8;
+            this.teamListBox.SelectedIndexChanged += new System.EventHandler(this.teamListBox_SelectedIndexChanged);
             // 
             // playersListBox
             // 
@@ -306,6 +307,7 @@ namespace VoetbalToernooi
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Homepage";
             this.Text = "Homepage";
+            this.Load += new System.EventHandler(this.Homepage_Load);
             this.DescPanel.ResumeLayout(false);
             this.DescPanel.PerformLayout();
             this.StatsPanel.ResumeLayout(false);
