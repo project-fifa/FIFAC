@@ -55,9 +55,8 @@
             this.balanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.balanceLabel.Location = new System.Drawing.Point(363, 43);
             this.balanceLabel.Name = "balanceLabel";
-            this.balanceLabel.Size = new System.Drawing.Size(41, 29);
+            this.balanceLabel.Size = new System.Drawing.Size(0, 29);
             this.balanceLabel.TabIndex = 5;
-            this.balanceLabel.Text = "50";
             // 
             // betLabel
             // 
@@ -145,6 +144,8 @@
             this.Controls.Add(this.balanceTextLabel);
             this.Name = "betscreen";
             this.Text = "betscreen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.betscreen_FormClosed);
+            this.Load += new System.EventHandler(this.betscreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.betUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

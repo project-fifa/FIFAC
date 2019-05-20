@@ -31,10 +31,17 @@ namespace VoetbalToernooi
 
         private void betscreenButton_Click(object sender, EventArgs e)
         {
-            betscreen form = new betscreen(matchListBox);
-            form.ShowDialog();
+            if (matchListBox.SelectedIndex <= 0)
+            {
+                MessageBox.Show("Selecteer een wedstrijd");
+            }
+            else
+            {
+                betscreen form = new betscreen(matchListBox);
+                form.ShowDialog();
 
-            this.Close();
+                this.Close();
+            }
         }
     }
 }
