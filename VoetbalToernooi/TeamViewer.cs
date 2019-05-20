@@ -108,5 +108,16 @@ namespace VoetbalToernooi
         {
             LoadInfo();
         }
+
+        private void betscreenButton_Click(object sender, EventArgs e)
+        {
+            gameview form = new gameview();
+            form.ShowDialog();
+        }
+
+        private void addUserButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

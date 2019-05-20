@@ -51,6 +51,8 @@ namespace VoetbalToernooi
             this.playersListBox = new System.Windows.Forms.ListBox();
             this.userListBox = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.addUserButton = new System.Windows.Forms.Button();
+            this.betscreenButton = new System.Windows.Forms.Button();
             this.DescPanel.SuspendLayout();
             this.StatsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -290,11 +292,33 @@ namespace VoetbalToernooi
             this.label3.TabIndex = 11;
             this.label3.Text = "Users";
             // 
+            // addUserButton
+            // 
+            this.addUserButton.Location = new System.Drawing.Point(261, 191);
+            this.addUserButton.Name = "addUserButton";
+            this.addUserButton.Size = new System.Drawing.Size(138, 48);
+            this.addUserButton.TabIndex = 12;
+            this.addUserButton.Text = "voeg gebruiker toe";
+            this.addUserButton.UseVisualStyleBackColor = true;
+            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
+            // 
+            // betscreenButton
+            // 
+            this.betscreenButton.Location = new System.Drawing.Point(409, 191);
+            this.betscreenButton.Name = "betscreenButton";
+            this.betscreenButton.Size = new System.Drawing.Size(138, 48);
+            this.betscreenButton.TabIndex = 13;
+            this.betscreenButton.Text = "Wedscherm";
+            this.betscreenButton.UseVisualStyleBackColor = true;
+            this.betscreenButton.Click += new System.EventHandler(this.betscreenButton_Click);
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 532);
+            this.Controls.Add(this.betscreenButton);
+            this.Controls.Add(this.addUserButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.userListBox);
             this.Controls.Add(this.playersListBox);
@@ -341,6 +365,8 @@ namespace VoetbalToernooi
         private System.Windows.Forms.ListBox playersListBox;
         private System.Windows.Forms.ListBox userListBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button addUserButton;
+        private System.Windows.Forms.Button betscreenButton;
     }
 }
 
