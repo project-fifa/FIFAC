@@ -55,7 +55,19 @@
     <Compile Include="AddTeam.Designer.cs">
       <DependentUpon>AddTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="betscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="betscreen.Designer.cs">
+      <DependentUpon>betscreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Competition.cs" />
+    <Compile Include="gameview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameview.Designer.cs">
+      <DependentUpon>gameview.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AddTeam.resx">
       <DependentUpon>AddTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="betscreen.resx">
+      <DependentUpon>betscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameview.resx">
+      <DependentUpon>gameview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
