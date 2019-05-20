@@ -108,5 +108,11 @@ namespace VoetbalToernooi
         {
             LoadInfo();
         }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            loginForm login = new loginForm();
+            login.ShowDialog();
+        }
     }
 }
