@@ -14,8 +14,6 @@ namespace VoetbalToernooi
 {
     public partial class Homepage : Form
     {
-        private object user;
-
         public Homepage()
         {
             InitializeComponent();
@@ -96,10 +94,19 @@ namespace VoetbalToernooi
         {
 
         }
+
+        public void LoadInfo()
+        {
+            if (File.Exists(@".\FifaInformation.data"))
+            {
+                List<User> username = JsonConvert.DeserializeObject<List<User>>(File.ReadAllText(@".\VehicleInformation.dat"));
+            }
+        }
         
+    
         private void Homepage_Load(object sender, EventArgs e)
         {
-            File.WriteAllText(@".\InformationUser.dat", JsonConvert.SerializeObject(user));
+            LoadInfo();
         }
     }
 }
