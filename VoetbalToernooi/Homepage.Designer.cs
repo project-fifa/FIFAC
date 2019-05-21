@@ -300,7 +300,6 @@ namespace VoetbalToernooi
             this.addUserButton.TabIndex = 12;
             this.addUserButton.Text = "voeg gebruiker toe";
             this.addUserButton.UseVisualStyleBackColor = true;
-            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
             // 
             // betscreenButton
             // 

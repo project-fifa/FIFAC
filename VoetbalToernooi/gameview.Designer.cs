@@ -31,6 +31,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.matchListBox = new System.Windows.Forms.ListBox();
             this.betscreenButton = new System.Windows.Forms.Button();
+            this.matchButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -62,11 +63,22 @@
             this.betscreenButton.UseVisualStyleBackColor = true;
             this.betscreenButton.Click += new System.EventHandler(this.betscreenButton_Click);
             // 
+            // matchButton
+            // 
+            this.matchButton.Location = new System.Drawing.Point(33, 193);
+            this.matchButton.Name = "matchButton";
+            this.matchButton.Size = new System.Drawing.Size(535, 40);
+            this.matchButton.TabIndex = 12;
+            this.matchButton.Text = "Maak wedstrijdschema";
+            this.matchButton.UseVisualStyleBackColor = true;
+            this.matchButton.Click += new System.EventHandler(this.matchButton_Click);
+            // 
             // gameview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 215);
+            this.ClientSize = new System.Drawing.Size(587, 237);
+            this.Controls.Add(this.matchButton);
             this.Controls.Add(this.matchListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.betscreenButton);
@@ -82,5 +94,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox matchListBox;
         private System.Windows.Forms.Button betscreenButton;
+        private System.Windows.Forms.Button matchButton;
     }
 }

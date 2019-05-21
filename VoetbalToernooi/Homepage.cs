@@ -114,5 +114,14 @@ namespace VoetbalToernooi
             loginForm login = new loginForm();
             login.ShowDialog();
         }
+
+        private void betscreenButton_Click(object sender, EventArgs e)
+        {
+            gameview form = new gameview();
+            form.ShowDialog();
+            
+        }
+
+
     }
 }

@@ -20,18 +20,13 @@ namespace VoetbalToernooi
 
         private void gameview_Load(object sender, EventArgs e)
         {
+            matchListBox.Items.Add("klik op de knop voor het wedstrijdschema");
 
-            matchListBox.Items.Add("team 1 - team 2");
-            matchListBox.Items.Add("team 3 - team 4");
-            matchListBox.Items.Add("team 1 - team 3");
-            matchListBox.Items.Add("team 4 - team 2");
-            matchListBox.Items.Add("team 1 - team 4");
-            matchListBox.Items.Add("team 3 - team 2");
         }
 
         private void betscreenButton_Click(object sender, EventArgs e)
         {
-            if (matchListBox.SelectedIndex <= 0)
+            if (matchListBox.SelectedIndex <= -1)
             {
                 MessageBox.Show("Selecteer een wedstrijd");
             }
@@ -42,6 +37,17 @@ namespace VoetbalToernooi
 
                 this.Close();
             }
+        }
+
+        private void matchButton_Click(object sender, EventArgs e)
+        {
+            matchListBox.Items.Clear();
+            matchListBox.Items.Add("team 1 - team 2");
+            matchListBox.Items.Add("team 3 - team 4");
+            matchListBox.Items.Add("team 1 - team 3");
+            matchListBox.Items.Add("team 4 - team 2");
+            matchListBox.Items.Add("team 1 - team 4");
+            matchListBox.Items.Add("team 3 - team 2");
         }
     }
 }
