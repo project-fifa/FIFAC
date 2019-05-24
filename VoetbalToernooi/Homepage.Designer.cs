@@ -69,6 +69,7 @@
             this.betScreenButton.TabIndex = 0;
             this.betScreenButton.Text = "wedstrijd ";
             this.betScreenButton.UseVisualStyleBackColor = true;
+            this.betScreenButton.Click += new System.EventHandler(this.betscreenButton_Click);
             // 
             // playersListBox
             // 
