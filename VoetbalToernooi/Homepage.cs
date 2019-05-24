@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,15 +6,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using Newtonsoft.Json;
 using System.Windows.Forms;
-using System.IO;
 
 namespace VoetbalToernooi
 {
-    public partial class Homepage : Form
+    public partial class HomePage : Form
     {
-        public Homepage()
+
+        public HomePage()
         {
             InitializeComponent();
             GetUserData();
@@ -41,7 +42,7 @@ namespace VoetbalToernooi
 
             for (int i = 0; i < Users.Count; i++)
             {
-                userListBox.Items.Add(Users[i].firstname + " " + Users[i].lastname);
+                usersListBox.Items.Add(Users[i].firstname + " " + Users[i].lastname);
             }
         }
         public void GetPlayerData()
@@ -86,7 +87,7 @@ namespace VoetbalToernooi
 
             for (int i = 0; i < Teams.Count; i++)
             {
-                teamListBox.Items.Add(Teams[i].teamName);
+                teamsListBox.Items.Add(Teams[i].teamName);
             }
         }
 
@@ -102,26 +103,18 @@ namespace VoetbalToernooi
                 List<User> username = JsonConvert.DeserializeObject<List<User>>(File.ReadAllText(@".\VehicleInformation.dat"));
             }
         }
-        
-    
+
+
         private void Homepage_Load(object sender, EventArgs e)
         {
             LoadInfo();
-        }
-
-        private void login_Click(object sender, EventArgs e)
-        {
-            loginForm login = new loginForm();
-            login.ShowDialog();
         }
 
         private void betscreenButton_Click(object sender, EventArgs e)
         {
             gameview form = new gameview();
             form.ShowDialog();
-            
+
         }
-
-
     }
 }

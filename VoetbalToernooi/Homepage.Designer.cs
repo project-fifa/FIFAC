@@ -1,6 +1,6 @@
-namespace VoetbalToernooi
+﻿namespace VoetbalToernooi
 {
-    partial class Homepage
+    partial class HomePage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,344 +28,356 @@ namespace VoetbalToernooi
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.DescPanel = new System.Windows.Forms.Panel();
-            this.Label007 = new System.Windows.Forms.Label();
-            this.Display006 = new System.Windows.Forms.Label();
-            this.Display005 = new System.Windows.Forms.Label();
-            this.Display004 = new System.Windows.Forms.Label();
-            this.Display003 = new System.Windows.Forms.Label();
-            this.Display002 = new System.Windows.Forms.Label();
-            this.Display001 = new System.Windows.Forms.Label();
-            this.StatsPanel = new System.Windows.Forms.Panel();
-            this.PTeamPointsLabel = new System.Windows.Forms.Label();
-            this.PDrawLabel = new System.Windows.Forms.Label();
-            this.PLostLabel = new System.Windows.Forms.Label();
-            this.PWinsLabel = new System.Windows.Forms.Label();
-            this.PAssistsLabel = new System.Windows.Forms.Label();
-            this.PGoalsLabel = new System.Windows.Forms.Label();
-            this.PNameLabel = new System.Windows.Forms.Label();
-            this.label008 = new System.Windows.Forms.Label();
-            this.teamListBox = new System.Windows.Forms.ListBox();
+            this.betScreenButton = new System.Windows.Forms.Button();
             this.playersListBox = new System.Windows.Forms.ListBox();
-            this.userListBox = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.addUserButton = new System.Windows.Forms.Button();
-            this.betscreenButton = new System.Windows.Forms.Button();
-            this.DescPanel.SuspendLayout();
-            this.StatsPanel.SuspendLayout();
+            this.descPanel = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.statsPanel = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.teamsListBox = new System.Windows.Forms.ListBox();
+            this.usersListBox = new System.Windows.Forms.ListBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.descPanel.SuspendLayout();
+            this.statsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // betScreenButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 247);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Spelers";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Teams";
-            // 
-            // DescPanel
-            // 
-            this.DescPanel.Controls.Add(this.Label007);
-            this.DescPanel.Controls.Add(this.Display006);
-            this.DescPanel.Controls.Add(this.Display005);
-            this.DescPanel.Controls.Add(this.Display004);
-            this.DescPanel.Controls.Add(this.Display003);
-            this.DescPanel.Controls.Add(this.Display002);
-            this.DescPanel.Controls.Add(this.Display001);
-            this.DescPanel.Location = new System.Drawing.Point(259, 267);
-            this.DescPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.DescPanel.Name = "DescPanel";
-            this.DescPanel.Size = new System.Drawing.Size(140, 254);
-            this.DescPanel.TabIndex = 5;
-            // 
-            // Label007
-            // 
-            this.Label007.AutoSize = true;
-            this.Label007.Location = new System.Drawing.Point(27, 218);
-            this.Label007.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label007.Name = "Label007";
-            this.Label007.Size = new System.Drawing.Size(97, 17);
-            this.Label007.TabIndex = 6;
-            this.Label007.Text = "Team Punten:";
-            // 
-            // Display006
-            // 
-            this.Display006.AutoSize = true;
-            this.Display006.Location = new System.Drawing.Point(20, 185);
-            this.Display006.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Display006.Name = "Display006";
-            this.Display006.Size = new System.Drawing.Size(105, 17);
-            this.Display006.TabIndex = 5;
-            this.Display006.Text = "Gelijkgespeeld:";
-            // 
-            // Display005
-            // 
-            this.Display005.AutoSize = true;
-            this.Display005.Location = new System.Drawing.Point(60, 151);
-            this.Display005.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Display005.Name = "Display005";
-            this.Display005.Size = new System.Drawing.Size(66, 17);
-            this.Display005.TabIndex = 4;
-            this.Display005.Text = "Verloren:";
-            // 
-            // Display004
-            // 
-            this.Display004.AutoSize = true;
-            this.Display004.Location = new System.Drawing.Point(43, 118);
-            this.Display004.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Display004.Name = "Display004";
-            this.Display004.Size = new System.Drawing.Size(80, 17);
-            this.Display004.TabIndex = 3;
-            this.Display004.Text = "Gewonnen:";
-            // 
-            // Display003
-            // 
-            this.Display003.AutoSize = true;
-            this.Display003.Location = new System.Drawing.Point(69, 85);
-            this.Display003.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Display003.Name = "Display003";
-            this.Display003.Size = new System.Drawing.Size(56, 17);
-            this.Display003.TabIndex = 2;
-            this.Display003.Text = "Assists:";
-            // 
-            // Display002
-            // 
-            this.Display002.AutoSize = true;
-            this.Display002.Location = new System.Drawing.Point(76, 52);
-            this.Display002.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Display002.Name = "Display002";
-            this.Display002.Size = new System.Drawing.Size(49, 17);
-            this.Display002.TabIndex = 1;
-            this.Display002.Text = "Goals:";
-            // 
-            // Display001
-            // 
-            this.Display001.AutoSize = true;
-            this.Display001.Location = new System.Drawing.Point(24, 18);
-            this.Display001.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Display001.Name = "Display001";
-            this.Display001.Size = new System.Drawing.Size(101, 17);
-            this.Display001.TabIndex = 0;
-            this.Display001.Text = "Spelers Naam:";
-            // 
-            // StatsPanel
-            // 
-            this.StatsPanel.Controls.Add(this.PTeamPointsLabel);
-            this.StatsPanel.Controls.Add(this.PDrawLabel);
-            this.StatsPanel.Controls.Add(this.PLostLabel);
-            this.StatsPanel.Controls.Add(this.PWinsLabel);
-            this.StatsPanel.Controls.Add(this.PAssistsLabel);
-            this.StatsPanel.Controls.Add(this.PGoalsLabel);
-            this.StatsPanel.Controls.Add(this.PNameLabel);
-            this.StatsPanel.Location = new System.Drawing.Point(407, 267);
-            this.StatsPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.StatsPanel.Name = "StatsPanel";
-            this.StatsPanel.Size = new System.Drawing.Size(140, 254);
-            this.StatsPanel.TabIndex = 6;
-            // 
-            // PTeamPointsLabel
-            // 
-            this.PTeamPointsLabel.AutoSize = true;
-            this.PTeamPointsLabel.Location = new System.Drawing.Point(17, 218);
-            this.PTeamPointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PTeamPointsLabel.Name = "PTeamPointsLabel";
-            this.PTeamPointsLabel.Size = new System.Drawing.Size(24, 17);
-            this.PTeamPointsLabel.TabIndex = 6;
-            this.PTeamPointsLabel.Text = "00";
-            // 
-            // PDrawLabel
-            // 
-            this.PDrawLabel.AutoSize = true;
-            this.PDrawLabel.Location = new System.Drawing.Point(17, 185);
-            this.PDrawLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PDrawLabel.Name = "PDrawLabel";
-            this.PDrawLabel.Size = new System.Drawing.Size(24, 17);
-            this.PDrawLabel.TabIndex = 5;
-            this.PDrawLabel.Text = "00";
-            // 
-            // PLostLabel
-            // 
-            this.PLostLabel.AutoSize = true;
-            this.PLostLabel.Location = new System.Drawing.Point(17, 151);
-            this.PLostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PLostLabel.Name = "PLostLabel";
-            this.PLostLabel.Size = new System.Drawing.Size(24, 17);
-            this.PLostLabel.TabIndex = 4;
-            this.PLostLabel.Text = "00";
-            // 
-            // PWinsLabel
-            // 
-            this.PWinsLabel.AutoSize = true;
-            this.PWinsLabel.Location = new System.Drawing.Point(17, 118);
-            this.PWinsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PWinsLabel.Name = "PWinsLabel";
-            this.PWinsLabel.Size = new System.Drawing.Size(24, 17);
-            this.PWinsLabel.TabIndex = 3;
-            this.PWinsLabel.Text = "00";
-            // 
-            // PAssistsLabel
-            // 
-            this.PAssistsLabel.AutoSize = true;
-            this.PAssistsLabel.Location = new System.Drawing.Point(17, 85);
-            this.PAssistsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PAssistsLabel.Name = "PAssistsLabel";
-            this.PAssistsLabel.Size = new System.Drawing.Size(24, 17);
-            this.PAssistsLabel.TabIndex = 2;
-            this.PAssistsLabel.Text = "00";
-            // 
-            // PGoalsLabel
-            // 
-            this.PGoalsLabel.AutoSize = true;
-            this.PGoalsLabel.Location = new System.Drawing.Point(17, 52);
-            this.PGoalsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PGoalsLabel.Name = "PGoalsLabel";
-            this.PGoalsLabel.Size = new System.Drawing.Size(24, 17);
-            this.PGoalsLabel.TabIndex = 1;
-            this.PGoalsLabel.Text = "00";
-            // 
-            // PNameLabel
-            // 
-            this.PNameLabel.AutoSize = true;
-            this.PNameLabel.Location = new System.Drawing.Point(17, 18);
-            this.PNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PNameLabel.Name = "PNameLabel";
-            this.PNameLabel.Size = new System.Drawing.Size(45, 17);
-            this.PNameLabel.TabIndex = 0;
-            this.PNameLabel.Text = "Naam";
-            // 
-            // label008
-            // 
-            this.label008.AutoSize = true;
-            this.label008.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label008.Location = new System.Drawing.Point(255, 242);
-            this.label008.Name = "label008";
-            this.label008.Size = new System.Drawing.Size(154, 20);
-            this.label008.TabIndex = 7;
-            this.label008.Text = "Speler Statestieken";
-            // 
-            // teamListBox
-            // 
-            this.teamListBox.FormattingEnabled = true;
-            this.teamListBox.ItemHeight = 16;
-            this.teamListBox.Location = new System.Drawing.Point(13, 27);
-            this.teamListBox.Name = "teamListBox";
-            this.teamListBox.Size = new System.Drawing.Size(202, 212);
-            this.teamListBox.TabIndex = 8;
-            this.teamListBox.SelectedIndexChanged += new System.EventHandler(this.teamListBox_SelectedIndexChanged);
+            this.betScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.betScreenButton.Location = new System.Drawing.Point(381, 208);
+            this.betScreenButton.Name = "betScreenButton";
+            this.betScreenButton.Size = new System.Drawing.Size(159, 33);
+            this.betScreenButton.TabIndex = 0;
+            this.betScreenButton.Text = "wedstrijd ";
+            this.betScreenButton.UseVisualStyleBackColor = true;
             // 
             // playersListBox
             // 
             this.playersListBox.FormattingEnabled = true;
             this.playersListBox.ItemHeight = 16;
-            this.playersListBox.Location = new System.Drawing.Point(13, 267);
+            this.playersListBox.Location = new System.Drawing.Point(13, 264);
             this.playersListBox.Name = "playersListBox";
-            this.playersListBox.Size = new System.Drawing.Size(202, 212);
-            this.playersListBox.TabIndex = 9;
+            this.playersListBox.Size = new System.Drawing.Size(180, 212);
+            this.playersListBox.TabIndex = 3;
             // 
-            // userListBox
+            // descPanel
             // 
-            this.userListBox.FormattingEnabled = true;
-            this.userListBox.ItemHeight = 16;
-            this.userListBox.Location = new System.Drawing.Point(399, 27);
-            this.userListBox.Name = "userListBox";
-            this.userListBox.Size = new System.Drawing.Size(160, 84);
-            this.userListBox.TabIndex = 10;
+            this.descPanel.Controls.Add(this.label21);
+            this.descPanel.Controls.Add(this.label20);
+            this.descPanel.Controls.Add(this.label19);
+            this.descPanel.Controls.Add(this.label18);
+            this.descPanel.Controls.Add(this.label17);
+            this.descPanel.Controls.Add(this.label16);
+            this.descPanel.Controls.Add(this.label15);
+            this.descPanel.Location = new System.Drawing.Point(208, 255);
+            this.descPanel.Name = "descPanel";
+            this.descPanel.Size = new System.Drawing.Size(168, 240);
+            this.descPanel.TabIndex = 7;
             // 
-            // label3
+            // label21
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(397, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Users";
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(83, 146);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(66, 17);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Verloren:";
             // 
-            // addUserButton
+            // label20
             // 
-            this.addUserButton.Location = new System.Drawing.Point(261, 191);
-            this.addUserButton.Name = "addUserButton";
-            this.addUserButton.Size = new System.Drawing.Size(138, 48);
-            this.addUserButton.TabIndex = 12;
-            this.addUserButton.Text = "voeg gebruiker toe";
-            this.addUserButton.UseVisualStyleBackColor = true;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(41, 177);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(108, 17);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "GelijkGespeeld:";
             // 
-            // betscreenButton
+            // label19
             // 
-            this.betscreenButton.Location = new System.Drawing.Point(409, 191);
-            this.betscreenButton.Name = "betscreenButton";
-            this.betscreenButton.Size = new System.Drawing.Size(138, 48);
-            this.betscreenButton.TabIndex = 13;
-            this.betscreenButton.Text = "Wedscherm";
-            this.betscreenButton.UseVisualStyleBackColor = true;
-            this.betscreenButton.Click += new System.EventHandler(this.betscreenButton_Click);
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(52, 9);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(101, 17);
+            this.label19.TabIndex = 8;
+            this.label19.Text = "Spelers Naam:";
             // 
-            // Homepage
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(100, 39);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(49, 17);
+            this.label18.TabIndex = 7;
+            this.label18.Text = "Goals:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(93, 77);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 17);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Assists:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(69, 112);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(80, 17);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Gewonnen:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(52, 214);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 17);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Team Punten:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(47, 146);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 17);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Verloren:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 214);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 17);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Team punten:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(67, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 17);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Goals:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(57, 77);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Assists:";
+            // 
+            // statsPanel
+            // 
+            this.statsPanel.Controls.Add(this.label14);
+            this.statsPanel.Controls.Add(this.label13);
+            this.statsPanel.Controls.Add(this.label12);
+            this.statsPanel.Controls.Add(this.label11);
+            this.statsPanel.Controls.Add(this.label10);
+            this.statsPanel.Controls.Add(this.label9);
+            this.statsPanel.Controls.Add(this.label8);
+            this.statsPanel.Location = new System.Drawing.Point(382, 255);
+            this.statsPanel.Name = "statsPanel";
+            this.statsPanel.Size = new System.Drawing.Size(158, 240);
+            this.statsPanel.TabIndex = 6;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(21, 177);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(24, 17);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "00";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(21, 214);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(24, 17);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "00";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(21, 39);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(24, 17);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "00";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(21, 77);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 17);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "00";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(21, 146);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(24, 17);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "00";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(21, 112);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(24, 17);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "00";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(21, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 17);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "naam";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(205, 235);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(101, 17);
+            this.label22.TabIndex = 11;
+            this.label22.Text = "Spelers Naam:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(12, 244);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 17);
+            this.label23.TabIndex = 12;
+            this.label23.Text = "Spelers:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(12, 9);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(51, 17);
+            this.label24.TabIndex = 13;
+            this.label24.Text = "Teams";
+            // 
+            // teamsListBox
+            // 
+            this.teamsListBox.FormattingEnabled = true;
+            this.teamsListBox.ItemHeight = 16;
+            this.teamsListBox.Location = new System.Drawing.Point(15, 29);
+            this.teamsListBox.Name = "teamsListBox";
+            this.teamsListBox.Size = new System.Drawing.Size(180, 212);
+            this.teamsListBox.TabIndex = 15;
+            // 
+            // usersListBox
+            // 
+            this.usersListBox.FormattingEnabled = true;
+            this.usersListBox.ItemHeight = 16;
+            this.usersListBox.Location = new System.Drawing.Point(363, 29);
+            this.usersListBox.Name = "usersListBox";
+            this.usersListBox.Size = new System.Drawing.Size(180, 100);
+            this.usersListBox.TabIndex = 16;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(362, 9);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(45, 17);
+            this.label25.TabIndex = 17;
+            this.label25.Text = "Users";
+            // 
+            // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 532);
-            this.Controls.Add(this.betscreenButton);
-            this.Controls.Add(this.addUserButton);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.userListBox);
+            this.ClientSize = new System.Drawing.Size(555, 510);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.usersListBox);
+            this.Controls.Add(this.teamsListBox);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.statsPanel);
+            this.Controls.Add(this.descPanel);
             this.Controls.Add(this.playersListBox);
-            this.Controls.Add(this.teamListBox);
-            this.Controls.Add(this.label008);
-            this.Controls.Add(this.StatsPanel);
-            this.Controls.Add(this.DescPanel);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Homepage";
+            this.Controls.Add(this.betScreenButton);
+            this.Name = "HomePage";
             this.Text = "Homepage";
-            this.Load += new System.EventHandler(this.Homepage_Load);
-            this.DescPanel.ResumeLayout(false);
-            this.DescPanel.PerformLayout();
-            this.StatsPanel.ResumeLayout(false);
-            this.StatsPanel.PerformLayout();
+            this.descPanel.ResumeLayout(false);
+            this.descPanel.PerformLayout();
+            this.statsPanel.ResumeLayout(false);
+            this.statsPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel DescPanel;
-        private System.Windows.Forms.Label Display006;
-        private System.Windows.Forms.Label Display005;
-        private System.Windows.Forms.Label Display004;
-        private System.Windows.Forms.Label Display003;
-        private System.Windows.Forms.Label Display002;
-        private System.Windows.Forms.Label Display001;
-        private System.Windows.Forms.Panel StatsPanel;
-        private System.Windows.Forms.Label PDrawLabel;
-        private System.Windows.Forms.Label PLostLabel;
-        private System.Windows.Forms.Label PWinsLabel;
-        private System.Windows.Forms.Label PAssistsLabel;
-        private System.Windows.Forms.Label PGoalsLabel;
-        private System.Windows.Forms.Label PNameLabel;
-        private System.Windows.Forms.Label Label007;
-        private System.Windows.Forms.Label PTeamPointsLabel;
-        private System.Windows.Forms.Label label008;
-        private System.Windows.Forms.ListBox teamListBox;
+
+        private System.Windows.Forms.Button betScreenButton;
         private System.Windows.Forms.ListBox playersListBox;
-        private System.Windows.Forms.ListBox userListBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button addUserButton;
-        private System.Windows.Forms.Button betscreenButton;
+        private System.Windows.Forms.Panel descPanel;
+        private System.Windows.Forms.Panel statsPanel;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ListBox teamsListBox;
+        private System.Windows.Forms.ListBox usersListBox;
+        private System.Windows.Forms.Label label25;
     }
 }
-
