@@ -33,7 +33,7 @@ namespace VoetbalToernooi
             decimal bet = betUpDown.Value;
             if (balance < 5)
             {
-                MessageBox.Show("U heeft niet genoeg geld meer");
+                MessageBox.Show("U heeft niet genoeg geld");
             }
             else if (balance < bet)
             {
@@ -46,6 +46,7 @@ namespace VoetbalToernooi
 
                 StreamWriter txt = new StreamWriter("data.txt");
                 txt.Write(balanceLabel.Text);
+                txt.Write("\n");
                 txt.Close();
                 this.Close();
 
