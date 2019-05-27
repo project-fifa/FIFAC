@@ -300,6 +300,7 @@ namespace VoetbalToernooi
             this.Controls.Add(this.userListBox);
             this.Name = "LoginPage";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginPage_Load);
             this.DescPanel.ResumeLayout(false);
             this.DescPanel.PerformLayout();
             this.StatsPanel.ResumeLayout(false);

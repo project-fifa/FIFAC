@@ -25,6 +25,7 @@ namespace VoetbalToernooi
             if (add.ShowDialog(this) == DialogResult.OK)
             {
                 userListBox.Items.Add(add.getItem());
+
             }
             add.Close();
             add.Dispose();
@@ -32,8 +33,18 @@ namespace VoetbalToernooi
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if (Convert.ToBoolean(userListBox.SelectedIndex) == false)
+            if (userListBox.SelectedIndex >= 0)
             {
+                StreamWriter SaveFile = new StreamWriter("user.txt");
+                foreach (var item in userListBox.Items)
+                {
+
+                    SaveFile.WriteLine(item.ToString());
+
+                }
+                    SaveFile.Close();
+
+                
                 HomePage home = new HomePage();
                 home.ShowDialog();
                 this.Close();
@@ -41,6 +52,18 @@ namespace VoetbalToernooi
             else
             {
                 MessageBox.Show("Je moet een gebruiker selecteren");
+            }
+        }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+            if (File.Exists("user.txt"))
+            {
+                StreamReader txt = new StreamReader("user.txt");
+
+                string[] lines = File.ReadAllLines("user.txt");
+                userListBox.Items.AddRange(lines);
+                txt.Close();
             }
         }
     }

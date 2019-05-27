@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,9 +25,5 @@ namespace VoetbalToernooi
             return usernameTextBox.Text;
         }
 
-        private void addUserButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

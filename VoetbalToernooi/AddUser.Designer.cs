@@ -58,7 +58,6 @@
             this.addUserButton.TabIndex = 2;
             this.addUserButton.Text = "Voeg gebruiker toe";
             this.addUserButton.UseVisualStyleBackColor = true;
-            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
             // 
             // cancelButton
             // 
