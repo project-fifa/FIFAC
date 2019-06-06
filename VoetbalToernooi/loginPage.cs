@@ -40,7 +40,6 @@ namespace VoetbalToernooi
                 {
 
                     SaveFile.WriteLine(item.ToString());
-                    SaveFile.Write("\r");
 
                 }
                     SaveFile.Close();
@@ -66,6 +65,11 @@ namespace VoetbalToernooi
                 userListBox.Items.AddRange(lines);
                 txt.Close();
             }
+        }
+
+        private void userListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
