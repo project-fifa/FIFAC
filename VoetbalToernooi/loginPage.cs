@@ -40,6 +40,7 @@ namespace VoetbalToernooi
                 {
 
                     SaveFile.WriteLine(item.ToString());
+                    SaveFile.Write("\r");
 
                 }
                     SaveFile.Close();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,13 +42,34 @@ namespace VoetbalToernooi
 
         private void matchButton_Click(object sender, EventArgs e)
         {
+            System.Net.WebClient downloader = new System.Net.WebClient();
+            string matchJson;
+
+            try
+            {
+                matchJson = downloader.DownloadString("http://localhost/PHP/FIFA-PHP/gameAPI.php");
+            }
+            catch
+            {
+                MessageBox.Show("Something went wrong");
+                return;
+            }
+
+            IList<Match> matches = JsonConvert.DeserializeObject<IList<Match>>(matchJson);
+
             matchListBox.Items.Clear();
-            matchListBox.Items.Add("team 1 - team 2");
-            matchListBox.Items.Add("team 3 - team 4");
-            matchListBox.Items.Add("team 1 - team 3");
-            matchListBox.Items.Add("team 4 - team 2");
-            matchListBox.Items.Add("team 1 - team 4");
-            matchListBox.Items.Add("team 3 - team 2");
+
+            foreach (Match match in matches)
+            {
+                
+                matchListBox.Items.Add(match.home_team + " - " + match.away_team);
+            }
         }
+
+        private void matchListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
