@@ -65,6 +65,7 @@
             this.matchListBox.Name = "matchListBox";
             this.matchListBox.Size = new System.Drawing.Size(535, 132);
             this.matchListBox.TabIndex = 11;
+            this.matchListBox.SelectedIndexChanged += new System.EventHandler(this.matchListBox_SelectedIndexChanged);
             // 
             // matchButton
             // 

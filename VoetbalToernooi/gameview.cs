@@ -184,6 +184,52 @@ namespace VoetbalToernooi
                 }
             }
         }
+
+        private void matchListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (matchListBox.SelectedIndex == 0)
+            {
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add(team[0]);
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add(team[1]);
+            }
+            if (matchListBox.SelectedIndex == 1)
+            {
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add(team[2]);
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add(team[3]);
+            }
+            if (matchListBox.SelectedIndex == 2)
+            {
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add(team[3]);
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add(team[1]);
+            }
+            if (matchListBox.SelectedIndex == 3)
+            {
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add(team[0]);
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add(team[2]);
+            }
+            if (matchListBox.SelectedIndex == 4)
+            {
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add(team[2]);
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add(team[1]);
+            }
+            if (matchListBox.SelectedIndex == 5)
+            {
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add(team[3]);
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add(team[0]);
+            }
+        }
     }
     }
 
