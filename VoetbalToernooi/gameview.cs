@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,19 +61,19 @@ namespace VoetbalToernooi
             decimal.TryParse(balanceLabel.Text, out balance);
             if (matchListBox.SelectedIndex == 0)
             {
-                //if (teamBetLabel.Text == team[0])
-                //{
-                //    decimal total = balance + bet + bet;
-                //    balanceLabel.Text = total.ToString();
-                //    MessageBox.Show("Gefelictiteerd u heeft gewonnen");
+                if (teamBetLabel.Text == "Uitteam")
+                {
+                    decimal total = balance + bet + bet;
+                    balanceLabel.Text = total.ToString();
+                    MessageBox.Show("Gefelictiteerd u heeft gewonnen");
 
-                // }
+                }
 
-                //else
-                // {
-                //    MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
-                // 
-                // }
+                else
+                 {
+                    MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
+               
+                 }
             }
             if (matchListBox.SelectedIndex == 1)
             {
@@ -90,17 +91,17 @@ namespace VoetbalToernooi
             }
             if (matchListBox.SelectedIndex == 2)
             {
-                //if (teamBetLabel.Text == team[1])
-                //{
-                  //  decimal total = balance + bet + bet;
-                   // balanceLabel.Text = total.ToString();
-                    //MessageBox.Show("Gefelictiteerd u heeft gewonnen");
-                //}
+                if (teamBetLabel.Text == "Gelijkspel")
+                {
+                   decimal total = balance + bet + bet;
+                   balanceLabel.Text = total.ToString();
+                    MessageBox.Show("Gefelictiteerd u heeft gewonnen");
+                }
 
-               // else
-               // {
-                   // MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
-               // }
+                else
+                {
+                    MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
+                }
             }
             if (matchListBox.SelectedIndex == 3)
             {
@@ -119,31 +120,31 @@ namespace VoetbalToernooi
 
             if (matchListBox.SelectedIndex == 4)
             {
-                //if (teamBetLabel.Text == team[2])
-                ////{
-                  //  decimal total = balance + bet + bet;
-                //    balanceLabel.Text = total.ToString();
-                   // MessageBox.Show("Gefelictiteerd u heeft gewonnen");
-                //}
+                if (teamBetLabel.Text == "Uitteam")
+               {
+                 decimal total = balance + bet + bet;
+                 balanceLabel.Text = total.ToString();
+                 MessageBox.Show("Gefelictiteerd u heeft gewonnen");
+               }
 
-                //else
-                //{
-                 //   MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
-               // }
+                else
+                {
+                    MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
+                }
             }
             if (matchListBox.SelectedIndex == 5)
             {
-               // if (teamBetLabel.Text == team[3])
-                //{
-                  //  decimal total = balance + bet + bet;
-                   // balanceLabel.Text = total.ToString();
-                    //MessageBox.Show("Gefelictiteerd u heeft gewonnen");
-                //}
+                if (teamBetLabel.Text == "Thuisteam")
+                {
+                    decimal total = balance + bet + bet;
+                    balanceLabel.Text = total.ToString();
+                    MessageBox.Show("Gefelictiteerd u heeft gewonnen");
+                }
 
-                //else
-                //{
-                 //   MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
-               // }
+               else
+               {
+                   MessageBox.Show("Helaas u heeft op het verkeerde team gewed");
+                }
             }
 
 
@@ -195,42 +196,58 @@ namespace VoetbalToernooi
             {
                 teamJson = downloader.DownloadString("http://localhost/PHP/FIFA-PHP/teamAPI.php");
             }
-            catch
+            catch 
             {
-                MessageBox.Show("Something went wrong");
+                MessageBox.Show("Er is iets fout gegaan");
                 return;
             }
 
             IList<Team> teams = JsonConvert.DeserializeObject<IList<Team>>(teamJson);
+            
 
             teams.ToArray();
-
+            
             if (matchListBox.SelectedIndex == 0)
             {
                 teamComboBox.Items.Clear();
-                teamComboBox.Items.Add(teams[0]);
+                teamComboBox.Items.Add("Thuisteam");
                 teamComboBox.Items.Add("Gelijkspel");
-                teamComboBox.Items.Add(teams[1]);
+                teamComboBox.Items.Add("Uitteam");
             }
             if (matchListBox.SelectedIndex == 1)
             {
-                
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add("Thuisteam");
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add("Uitteam");
             }
             if (matchListBox.SelectedIndex == 2)
             {
-                
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add("Thuisteam");
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add("Uitteam");
             }
             if (matchListBox.SelectedIndex == 3)
             {
-               
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add("Thuisteam");
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add("Uitteam");
             }
             if (matchListBox.SelectedIndex == 4)
             {
-               
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add("Thuisteam");
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add("Uitteam");
             }
             if (matchListBox.SelectedIndex == 5)
             {
-                
+                teamComboBox.Items.Clear();
+                teamComboBox.Items.Add("Thuisteam");
+                teamComboBox.Items.Add("Gelijkspel");
+                teamComboBox.Items.Add("Uitteam");
             }
         }
 
@@ -240,4 +257,5 @@ namespace VoetbalToernooi
         }
     }
     }
+
 
