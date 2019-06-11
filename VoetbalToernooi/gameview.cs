@@ -29,6 +29,7 @@ namespace VoetbalToernooi
 
         private void matchButton_Click(object sender, EventArgs e)
         {
+            matchListBox.Items.Clear();
             System.Net.WebClient downloader = new System.Net.WebClient();
             string matchJson;
 

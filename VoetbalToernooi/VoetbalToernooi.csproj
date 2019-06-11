@@ -61,12 +61,6 @@
     <Compile Include="AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="betscreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="betscreen.Designer.cs">
-      <DependentUpon>betscreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Competition.cs" />
     <Compile Include="gameview.cs">
       <SubType>Form</SubType>
@@ -97,9 +91,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="betscreen.resx">
-      <DependentUpon>betscreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gameview.resx">
       <DependentUpon>gameview.cs</DependentUpon>
